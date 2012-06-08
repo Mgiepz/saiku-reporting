@@ -26,7 +26,7 @@
         </ul>
 		</div>
 		
-<p>This is a community project. Please support its developement!</p>
+<p>This is a community project. <br/>Please help covering project-related expenses.</p>
 		<div align="center" style="margin-bottom:60px">	
 	
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -72,13 +72,19 @@ Saiku Reporting is a web-based reporting client available as a plugin for the Pe
 <p>
 <ul>
 <li>
-Download saiku-adhoc-plugin-1.0-GA.zip and unpack it into biserver-ce/pentaho-solutions/system.
+Download the CDA-Plugin from <a href="http://cda.webdetails.org/">cda.webdetails.org</a> and install it into your bi-server.
 </li>
 <li>
-If you run on biserver 3.8.x you have to copy do the following:
-Copy or replace the pentaho-reporting-engine-classic-extensions-cda-xxx.jar in pentaho/web-inf/lib
+Download <a href="https://github.com/Mgiepz/saiku-reporting/raw/gh-pages/downloads/saiku-adhoc-plugin-1.0-GA.zip">saiku-adhoc-plugin-1.0-GA.zip</a> and unpack it into biserver-ce/pentaho-solutions/system.
+</li>
+<li>
+If you want to be able to export PRPTs from Saiku-Reporting, copy or replace the pentaho-reporting-engine-classic-extensions-cda-xxx.jar in pentaho/web-inf/lib
 with the one that you find in biserver-ce/pentaho-solutions/system/saiku-adhoc/lib
 </li>
+<li>
+To put Saiku-Reports under the ACL, add .adhoc to the acl-files in pentaho.xml
+</li>
+
 <li>
 Restart the Bi-Server
 </li>
